@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+import uvicorn
 klu=FastAPI(title="AI-Tutor",
             description="AI Tutor Pbl project",
             version="1.0.0")
@@ -20,4 +21,7 @@ def getstudents():
     return [{"id":1,"name":"ram","gender":"male","course":"dsa"},
             {"id":2,"name":"klu","gender":"male","course":"dsa"},
             {"id":3,"name":"seetha","gender":"female","course":"dsa"}]
+if __name__=="__main__":
+    uvicorn.run("main.klu",host="127.0.0.1",port=2027,reload=True)
+
      
