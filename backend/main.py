@@ -22,6 +22,6 @@ def getstudents():
             {"id":2,"name":"klu","gender":"male","course":"dsa"},
             {"id":3,"name":"seetha","gender":"female","course":"dsa"}]
 if __name__=="__main__":
-    uvicorn.run("main.klu",host="127.0.0.1",port=2027,reload=True)
+    uvicorn.run("main:klu",host="127.0.0.1",port=2027,reload=True)
 
      
